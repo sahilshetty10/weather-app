@@ -47,18 +47,20 @@ function updateForecast(data) {
     let humidity = forecast_day.day.avghumidity;
     let windSpeed = forecast_day.day.maxwind_kph;
     document.querySelector(`#day${index} > .forecast-date`).innerText = date;
-    document.querySelector(`#day${index} > .forecast-condition`).innerText =
-      condition;
-    document.querySelector(`#day${index} > .forecast-condition-icon`).src =
-      icon;
     document.querySelector(
-      `#day${index} > .forecast-hi-lo`
+      `#day${index} > .forecast-details > .condition-container > .forecast-condition`
+    ).innerText = condition;
+    document.querySelector(
+      `#day${index} > .forecast-details > .condition-container > .forecast-condition-icon`
+    ).src = icon;
+    document.querySelector(
+      `#day${index} > .forecast-details > .forecast-hi-lo`
     ).innerText = `${max_temp}° / ${min_temp}°`;
     document.querySelector(
-      `#day${index} > .forecast-humidity`
+      `#day${index} > .forecast-details > .forecast-humidity`
     ).innerText = `Humidity: ${humidity}%`;
     document.querySelector(
-      `#day${index} > .forecast-wind`
+      `#day${index} > .forecast-details > .forecast-wind`
     ).innerText = `Wind Speed: ${windSpeed} km/h`;
   }
 }
