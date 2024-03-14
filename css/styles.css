@@ -5,8 +5,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
- 
-    
 }
 
 #current {
@@ -40,6 +38,8 @@ body {
     display: grid;
     padding: 1rem;
     border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
 }
 
 .navbar-nav .nav-link.active {
