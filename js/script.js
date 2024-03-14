@@ -8,6 +8,7 @@ async function fetchData(city) {
   let data = await response.json();
   console.log(data);
   updateCurrentWeather(data);
+  updateForecast(data);
 }
 
 function updateCurrentWeather(data) {
@@ -32,6 +33,34 @@ function updateCurrentWeather(data) {
   document.getElementById(
     "current-wind"
   ).innerText = `Wind Speed: ${windSpeed} km/h`;
+}
+function updateForecast(data) {
+  let forecast_data = data.forecast.forecastday;
+  for (let index = 1; index < forecast_data.length; index++) {
+    let forecast_day = forecast_data[index];
+    let date = forecast_day.date;
+    console.log(date);
+    let condition = forecast_day.day.condition.text;
+    let max_temp = forecast_day.day.maxtemp_c;
+    let min_temp = forecast_day.day.mintemp_c;
+    let icon = forecast_day.day.condition.icon;
+    let humidity = forecast_day.day.avghumidity;
+    let windSpeed = forecast_day.day.maxwind_kph;
+    document.querySelector(`#day${index} > .forecast-date`).innerText = date;
+    document.querySelector(`#day${index} > .forecast-condition`).innerText =
+      condition;
+    document.querySelector(`#day${index} > .forecast-condition-icon`).src =
+      icon;
+    document.querySelector(
+      `#day${index} > .forecast-hi-lo`
+    ).innerText = `${max_temp}° / ${min_temp}°`;
+    document.querySelector(
+      `#day${index} > .forecast-humidity`
+    ).innerText = `Humidity: ${humidity}%`;
+    document.querySelector(
+      `#day${index} > .forecast-wind`
+    ).innerText = `Wind Speed: ${windSpeed} km/h`;
+  }
 }
 
 document
