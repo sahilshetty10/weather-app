@@ -143,7 +143,11 @@ header, footer {
     max-width: 600px;
     margin: 0 auto;
     text-align: justify;
-    padding: 20px;
+    padding: 40.px;
+}
+#about{
+background-color: #ffff;
+padding: 4rem;
 }
 
 footer {
