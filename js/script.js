@@ -7,6 +7,9 @@ async function fetchData(city) {
   );
   let data = await response.json();
   console.log(data);
+  document.getElementById(
+    "location"
+  ).innerText = `Weather information in ${data.location.name}, ${data.location.region}`;
   updateCurrentWeather(data);
   updateForecast(data);
 }

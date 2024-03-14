@@ -9,9 +9,9 @@ body {
 
 #current {
     background-color: white;
-    width: 20vw;
+    /* width: 20vw; */
     display: grid;
-    padding: 1rem;
+    padding: 2rem;
     border-radius:10px;
     border-style: solid;
     border-width: 2px;
@@ -22,7 +22,7 @@ body {
     align-items: center;
     justify-content: center;
    margin: 4rem;
-    
+   gap: 40px;    
   }
 
 #current-details {
@@ -34,9 +34,9 @@ body {
 
 .forecast {
     background-color: white;
-    width: 15vw;
+    /* width: 15vw; */
     display: grid;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 20px;
     border-style: solid;
     border-width: 2px;
@@ -119,4 +119,7 @@ body {
 #current-temp {
     font-size: xx-large;
     font-weight: 600;
+}
+p {
+    font-size: large;
 }
