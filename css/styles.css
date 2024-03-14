@@ -127,11 +127,6 @@ p {
 p {
     font-size: large;
 }
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 header, footer {
     background-color: #333;
@@ -153,11 +148,6 @@ footer {
     width: 100%;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-}
 
 .container {
     max-width: 800px;
@@ -198,4 +188,28 @@ p {
     height: 100%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 50%, rgba(255, 255, 255, 0) 100%);
     pointer-events: none;
+}
+
+#terms-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+#terms-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+#terms-container .content {
+    border-top: 2px solid #ccc;
+    padding-top: 20px;
+}
+
+#terms-container p {
+    line-height: 1.6;
+    color: #666;
 }
