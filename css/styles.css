@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
+   margin: 4rem;
     
   }
 
@@ -34,7 +34,7 @@ body {
 
 .forecast {
     background-color: white;
-    width: 10vw;
+    width: 15vw;
     display: grid;
     padding: 1rem;
     border-radius: 20px;
@@ -92,4 +92,31 @@ body {
     align-items: center;
     padding: 10px;
     color: white;
+}
+
+.forecast-condition-icon,
+#current-condition-icon {
+    height: 50px;
+    width: 50px;
+}
+.condition-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+#city-input {
+    padding: 1rem 2rem;
+}
+.forecast-condition {
+    font-size: large;
+    font-weight: 600;
+}
+#current-condition {
+    font-size: large;
+    font-weight: 600;
+}
+#current-temp {
+    font-size: xx-large;
+    font-weight: 600;
 }
