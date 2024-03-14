@@ -1,7 +1,8 @@
 body {
     background-color: #121214;
 }
-#forecast-container{
+
+#forecast-container {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -12,25 +13,26 @@ body {
     /* width: 20vw; */
     display: grid;
     padding: 2rem;
-    border-radius:10px;
+    border-radius: 10px;
     border-style: solid;
     border-width: 2px;
     opacity: 0.9;
 }
+
 #search-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   margin: 4rem;
-   gap: 40px;    
-  }
+    margin: 4rem;
+    gap: 40px;
+}
 
 #current-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
-    
+
 }
 
 .forecast {
@@ -74,16 +76,16 @@ body {
 
 .nav-item-spacing {
     margin-right: 20px;
-   
+
 }
 
 .navbar-brand img {
     border-radius: 50%;
-  
+
     width: 40px;
 
     height: 40px;
-  
+
 }
 
 
@@ -101,38 +103,46 @@ body {
     height: 50px;
     width: 50px;
 }
+
 .condition-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
 }
+
 #city-input {
     padding: 1rem 2rem;
     border-radius: 20px;
     opacity: 0.9;
     font-size: larger;
 }
+
 .forecast-condition {
     font-size: large;
     font-weight: 600;
 }
+
 #current-condition {
     font-size: large;
     font-weight: 600;
 }
+
 #current-temp {
     font-size: xx-large;
     font-weight: 600;
 }
-p {
-    font-size: large;
-}
+
 p {
     font-size: large;
 }
 
-header, footer {
+p {
+    font-size: large;
+}
+
+header,
+footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -145,9 +155,10 @@ header, footer {
     text-align: justify;
     padding: 40.px;
 }
-#about{
-background-color: #ffff;
-padding: 4rem;
+
+#about {
+    background-color: #ffff;
+    padding: 4rem;
 }
 
 footer {
