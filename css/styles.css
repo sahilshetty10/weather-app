@@ -15,6 +15,7 @@ body {
     border-radius:10px;
     border-style: solid;
     border-width: 2px;
+    opacity: 0.9;
 }
 #search-container {
     display: flex;
@@ -40,6 +41,7 @@ body {
     border-radius: 20px;
     border-style: solid;
     border-width: 2px;
+    opacity: 0.9;
 }
 
 .navbar-nav .nav-link.active {
@@ -108,6 +110,8 @@ body {
 #city-input {
     padding: 1rem 2rem;
     border-radius: 20px;
+    opacity: 0.9;
+    font-size: larger;
 }
 .forecast-condition {
     font-size: large;
@@ -157,6 +161,9 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
+    background-image: url('../assets/bg.jpg');
+    background-position: top;
+    background-size: cover;
 }
 
 .container {
