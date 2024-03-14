@@ -13,9 +13,7 @@ This project was developed as part of the Humber College project by Sahil Shetty
 - **HTML/CSS**: Used for structuring and styling the web pages.
 - **JavaScript**: Used for client-side scripting and handling dynamic content.
 - **Bootstrap**: Frontend framework used for styling and layout components.
-- **jQuery**: JavaScript library used for DOM manipulation and making asynchronous HTTP requests to fetch weather data.
 - **Weather API**: External weather API used to fetch current weather and forecast data for cities.
-
 
 ## Getting Started
 
@@ -23,15 +21,15 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
 
-    ```
-    git clone https://github.com/sahilshetty10/weather-app
-    ```
+   ```
+   git clone https://github.com/sahilshetty10/weather-app
+   ```
 
 2. Navigate to the project directory:
 
-    ```
-    cd weather-app
-    ```
+   ```
+   cd weather-app
+   ```
 
 3. Open the `index.html` file in your web browser.
 

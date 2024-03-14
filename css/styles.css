@@ -107,6 +107,7 @@ body {
 }
 #city-input {
     padding: 1rem 2rem;
+    border-radius: 20px;
 }
 .forecast-condition {
     font-size: large;
